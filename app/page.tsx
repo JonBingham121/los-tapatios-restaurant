@@ -20,7 +20,7 @@ export default function Home() {
             <div>
               <Link
                 href="/order"
-                className="inline-block bg-mexican-red text-white px-10 py-4 rounded-md text-lg font-semibold hover:bg-red-700 transition shadow-lg"
+                className="inline-block bg-red-600 text-white px-10 py-4 rounded-md text-lg font-semibold hover:bg-red-700 transition shadow-lg"
               >
                 Order Now
               </Link>
@@ -49,7 +49,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* St. George */}
             <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md p-8 hover:shadow-xl transition text-center">
-              <div className="w-16 h-16 bg-mexican-red rounded-full mx-auto mb-6 flex items-center justify-center">
+              <div className="w-16 h-16 bg-red-600 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <span className="text-3xl text-white">📍</span>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">St. George, UT</h3>
@@ -58,7 +58,7 @@ export default function Home() {
               <p className="text-gray-900 font-semibold mb-6">(435) 555-1234</p>
               <Link
                 href="/locations/st-george"
-                className="inline-block text-mexican-red font-semibold hover:underline"
+                className="inline-block text-red-600 font-semibold hover:underline"
               >
                 View Details →
               </Link>
@@ -66,7 +66,7 @@ export default function Home() {
 
             {/* Kanab */}
             <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md p-8 hover:shadow-xl transition text-center">
-              <div className="w-16 h-16 bg-mexican-red rounded-full mx-auto mb-6 flex items-center justify-center">
+              <div className="w-16 h-16 bg-red-600 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <span className="text-3xl text-white">📍</span>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Kanab, UT</h3>
@@ -75,7 +75,7 @@ export default function Home() {
               <p className="text-gray-900 font-semibold mb-6">(435) 555-5678</p>
               <Link
                 href="/locations/kanab"
-                className="inline-block text-mexican-red font-semibold hover:underline"
+                className="inline-block text-red-600 font-semibold hover:underline"
               >
                 View Details →
               </Link>
@@ -83,7 +83,7 @@ export default function Home() {
 
             {/* Flagstaff */}
             <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md p-8 hover:shadow-xl transition text-center">
-              <div className="w-16 h-16 bg-mexican-red rounded-full mx-auto mb-6 flex items-center justify-center">
+              <div className="w-16 h-16 bg-red-600 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <span className="text-3xl text-white">📍</span>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Flagstaff, AZ</h3>
@@ -92,7 +92,7 @@ export default function Home() {
               <p className="text-gray-900 font-semibold mb-6">(928) 555-9012</p>
               <Link
                 href="/locations/flagstaff"
-                className="inline-block text-mexican-red font-semibold hover:underline"
+                className="inline-block text-red-600 font-semibold hover:underline"
               >
                 View Details →
               </Link>
@@ -139,7 +139,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/menu"
-              className="inline-block bg-mexican-red text-white px-10 py-4 rounded-md text-lg font-semibold hover:bg-red-700 transition shadow-md"
+              className="inline-block bg-red-600 text-white px-10 py-4 rounded-md text-lg font-semibold hover:bg-red-700 transition shadow-md"
             >
               View Full Menu
             </Link>
@@ -198,7 +198,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-mexican-red to-red-700 text-white">
+      <section className="py-20 bg-gradient-to-r from-red-600 to-red-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Craving Authentic Mexican Food?
@@ -208,7 +208,7 @@ export default function Home() {
           </p>
           <Link
             href="/order"
-            className="inline-block bg-white text-mexican-red px-12 py-5 rounded-md text-xl font-bold hover:bg-gray-100 transition shadow-xl"
+            className="inline-block bg-white text-red-600 px-12 py-5 rounded-md text-xl font-bold hover:bg-gray-100 transition shadow-xl"
           >
             Order Now
           </Link>

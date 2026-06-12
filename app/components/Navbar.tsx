@@ -12,32 +12,32 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-mexican-red">Los Tapatios</span>
+            <span className="text-2xl font-bold text-red-600">Los Tapatios</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-charcoal hover:text-mexican-red transition">
+            <Link href="/" className="text-charcoal hover:text-red-600 transition">
               Home
             </Link>
-            <Link href="/locations" className="text-charcoal hover:text-mexican-red transition">
+            <Link href="/locations" className="text-charcoal hover:text-red-600 transition">
               Locations
             </Link>
-            <Link href="/menu" className="text-charcoal hover:text-mexican-red transition">
+            <Link href="/menu" className="text-charcoal hover:text-red-600 transition">
               Menu
             </Link>
-            <Link href="/catering" className="text-charcoal hover:text-mexican-red transition">
+            <Link href="/catering" className="text-charcoal hover:text-red-600 transition">
               Catering
             </Link>
-            <Link href="/vip-club" className="text-charcoal hover:text-mexican-red transition">
+            <Link href="/vip-club" className="text-charcoal hover:text-red-600 transition">
               VIP Club
             </Link>
-            <Link href="/contact" className="text-charcoal hover:text-mexican-red transition">
+            <Link href="/contact" className="text-charcoal hover:text-red-600 transition">
               Contact
             </Link>
             <Link
               href="/order"
-              className="bg-mexican-red text-white px-6 py-2 rounded-full hover:bg-mexican-orange transition"
+              className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition"
             >
               Order Now
             </Link>
@@ -69,27 +69,27 @@ export default function Navbar() {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden pb-4">
-            <Link href="/" className="block py-2 text-charcoal hover:text-mexican-red">
+            <Link href="/" className="block py-2 text-charcoal hover:text-red-600">
               Home
             </Link>
-            <Link href="/locations" className="block py-2 text-charcoal hover:text-mexican-red">
+            <Link href="/locations" className="block py-2 text-charcoal hover:text-red-600">
               Locations
             </Link>
-            <Link href="/menu" className="block py-2 text-charcoal hover:text-mexican-red">
+            <Link href="/menu" className="block py-2 text-charcoal hover:text-red-600">
               Menu
             </Link>
-            <Link href="/catering" className="block py-2 text-charcoal hover:text-mexican-red">
+            <Link href="/catering" className="block py-2 text-charcoal hover:text-red-600">
               Catering
             </Link>
-            <Link href="/vip-club" className="block py-2 text-charcoal hover:text-mexican-red">
+            <Link href="/vip-club" className="block py-2 text-charcoal hover:text-red-600">
               VIP Club
             </Link>
-            <Link href="/contact" className="block py-2 text-charcoal hover:text-mexican-red">
+            <Link href="/contact" className="block py-2 text-charcoal hover:text-red-600">
               Contact
             </Link>
             <Link
               href="/order"
-              className="block mt-2 bg-mexican-red text-white px-6 py-2 rounded-full text-center hover:bg-mexican-orange"
+              className="block mt-2 bg-red-600 text-white px-6 py-2 rounded-full text-center hover:bg-orange-600"
             >
               Order Now
             </Link>
