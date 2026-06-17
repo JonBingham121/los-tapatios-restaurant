@@ -7,31 +7,31 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold text-mexican-red mb-4">Los Tapatios</h3>
+            <h3 className="text-2xl font-bold text-brand-red mb-4">Los Tapatios</h3>
             <p className="text-gray-300">Authentic Mexican cuisine served with love.</p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-mexican-yellow">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4 text-brand-gold">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/menu" className="text-gray-300 hover:text-mexican-orange transition">
+                <Link href="/menu" className="text-gray-300 hover:text-brand-red transition">
                   Menu
                 </Link>
               </li>
               <li>
-                <Link href="/locations" className="text-gray-300 hover:text-mexican-orange transition">
+                <Link href="/locations" className="text-gray-300 hover:text-brand-red transition">
                   Locations
                 </Link>
               </li>
               <li>
-                <Link href="/catering" className="text-gray-300 hover:text-mexican-orange transition">
+                <Link href="/catering" className="text-gray-300 hover:text-brand-red transition">
                   Catering
                 </Link>
               </li>
               <li>
-                <Link href="/vip-club" className="text-gray-300 hover:text-mexican-orange transition">
+                <Link href="/vip-club" className="text-gray-300 hover:text-brand-red transition">
                   VIP Club
                 </Link>
               </li>
@@ -40,7 +40,7 @@ export default function Footer() {
 
           {/* Locations */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-mexican-yellow">Our Locations</h4>
+            <h4 className="text-lg font-semibold mb-4 text-brand-gold">Our Locations</h4>
             <ul className="space-y-2 text-gray-300">
               <li>St. George, UT</li>
               <li>Kanab, UT</li>
@@ -50,7 +50,7 @@ export default function Footer() {
 
           {/* Hours */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-mexican-yellow">Hours</h4>
+            <h4 className="text-lg font-semibold mb-4 text-brand-gold">Hours</h4>
             <p className="text-gray-300">
               Mon - Thu: 11am - 9pm<br />
               Fri - Sat: 11am - 10pm<br />

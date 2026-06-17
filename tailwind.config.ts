@@ -9,18 +9,23 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Mexican restaurant brand colors
-        'mexican-red': '#D32F2F',
-        'mexican-orange': '#FF6F00',
-        'mexican-yellow': '#FBC02D',
+        // Los Tapatios Brand Colors
+        'brand-red': '#B71C1C',
+        'brand-gold': '#F4B400',
+        'brand-cream': '#FFF8E8',
+        'brand-green': '#4E7C35',
+        'charcoal': '#2C2C2C',
+        // Legacy aliases for existing components
+        'mexican-red': '#B71C1C',
+        'mexican-orange': '#B71C1C',
+        'mexican-yellow': '#F4B400',
         'mexican-blue': '#1976D2',
-        'mexican-gold': '#FFD700',
-        'mexican-cream': '#FFF8DC',
-        'mexican-green': '#388E3C',
-        'charcoal': '#333333',
+        'mexican-gold': '#F4B400',
+        'mexican-cream': '#FFF8E8',
+        'mexican-green': '#4E7C35',
       },
       fontFamily: {
-        'display': ['Georgia', 'serif'],
+        'display': ['Playfair Display', 'Georgia', 'serif'],
       },
     },
   },
