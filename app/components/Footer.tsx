@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,8 +8,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold text-brand-red mb-4">Los Tapatios</h3>
-            <p className="text-gray-300">Authentic Mexican cuisine served with love.</p>
+            <Image 
+              src="/assets/logo.jpg" 
+              alt="Los Tapatios Mexican Restaurant" 
+              width={200} 
+              height={85}
+              className="h-16 w-auto mb-4 bg-white rounded-lg p-2"
+            />
+            <p className="text-gray-300 font-sans">Authentic Mexican cuisine served with love.</p>
           </div>
 
           {/* Quick Links */}

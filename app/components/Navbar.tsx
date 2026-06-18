@@ -16,9 +16,10 @@ export default function Navbar() {
             <Image 
               src="/assets/logo.jpg" 
               alt="Los Tapatios Mexican Restaurant" 
-              width={180} 
-              height={80}
-              className="h-16 w-auto"
+              width={240} 
+              height={100}
+              className="h-20 w-auto"
+              priority
             />
           </Link>
 

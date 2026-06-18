@@ -375,22 +375,21 @@ export default function Home() {
       {/* Craving Mexican CTA */}
       <section className="relative py-20 overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{backgroundImage: "url('/assets/cta-enchiladas.png')"}}
-        >
-          <div className="absolute inset-0 bg-brand-brown/90"></div>
-        </div>
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-red to-brand-brown" />
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-          <h2 className="text-5xl md:text-6xl font-headline mb-4 tracking-wide">
+          <h2 className="text-5xl md:text-6xl font-headline mb-4 tracking-wide text-shadow">
             Craving Mexican Food?
           </h2>
-          <p className="text-xl mb-8 font-accent">
+          <p className="text-xl mb-8 font-accent text-shadow">
             Order online for pickup or delivery today!
           </p>
           <Link 
             href="/order"
-            className="inline-block bg-brand-cream text-brand-brown px-10 py-3 rounded-full text-base font-sans font-bold hover:bg-white transition"
+            className="inline-block bg-brand-gold text-black px-10 py-3 rounded-full text-base font-sans font-bold hover:bg-brand-cream transition shadow-lg"
           >
             Order Now
           </Link>
