@@ -130,10 +130,17 @@ export default function Home() {
       </section>
 
       {/* Signature Favorites */}
-      <section className="py-16 bg-brand-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-16 overflow-hidden">
+        {/* Wood Background */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{backgroundImage: "url('/assets/bg-wood.png')"}} 
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-headline text-gray-900 mb-2 tracking-wide">
+            <h2 className="text-4xl md:text-5xl font-headline text-white mb-2 tracking-wide text-shadow">
               Signature Favorites
             </h2>
           </div>
@@ -147,7 +154,7 @@ export default function Home() {
                   style={{backgroundImage: "url('/assets/food-fajitas.png')"}}
                 ></div>
               </div>
-              <h3 className="text-lg md:text-xl font-headline text-gray-900 tracking-wide">Sizzling Fajitas</h3>
+              <h3 className="text-lg md:text-xl font-headline text-white tracking-wide text-shadow">Sizzling Fajitas</h3>
             </div>
 
             {/* Street Tacos */}
@@ -158,7 +165,7 @@ export default function Home() {
                   style={{backgroundImage: "url('/assets/food-tacos.png')"}}
                 ></div>
               </div>
-              <h3 className="text-lg md:text-xl font-headline text-gray-900 tracking-wide">Street Tacos</h3>
+              <h3 className="text-lg md:text-xl font-headline text-white tracking-wide text-shadow">Street Tacos</h3>
             </div>
 
             {/* Molcajete */}
@@ -169,7 +176,7 @@ export default function Home() {
                   style={{backgroundImage: "url('/assets/food-molcajete.png')"}}
                 ></div>
               </div>
-              <h3 className="text-lg md:text-xl font-headline text-gray-900 tracking-wide">Molcajete</h3>
+              <h3 className="text-lg md:text-xl font-headline text-white tracking-wide text-shadow">Molcajete</h3>
             </div>
 
             {/* Margaritas */}
@@ -180,7 +187,7 @@ export default function Home() {
                   style={{backgroundImage: "url('/assets/food-margarita.png')"}}
                 ></div>
               </div>
-              <h3 className="text-lg md:text-xl font-headline text-gray-900 tracking-wide">Margaritas</h3>
+              <h3 className="text-lg md:text-xl font-headline text-white tracking-wide text-shadow">Margaritas</h3>
             </div>
           </div>
 
@@ -250,20 +257,98 @@ export default function Home() {
 
       {/* Google Reviews */}
       <section className="py-16 bg-brand-cream">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-white rounded-xl shadow-lg p-10">
-            <div className="flex justify-center items-center gap-1 mb-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-3xl font-headline text-gray-900 mb-2 tracking-wide">4.6 Stars on Google</p>
+            <div className="flex justify-center items-center gap-1">
               {[1,2,3,4,5].map((i) => (
                 <svg key={i} className="w-8 h-8 text-brand-gold fill-current" viewBox="0 0 20 20">
                   <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                 </svg>
               ))}
             </div>
-            <p className="text-3xl font-headline text-gray-900 mb-6 tracking-wide">4.6 Stars on Google</p>
-            <p className="text-lg text-gray-700 italic leading-relaxed mb-4 font-sans">
-              "Best authentic Mexican food in Southern Utah! The fajitas are incredible and the staff treats you like family."
-            </p>
-            <p className="text-gray-600 font-sans">— Sarah M., St. George</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Review 1 */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="flex gap-1 mb-3">
+                {[1,2,3,4,5].map((i) => (
+                  <svg key={i} className="w-5 h-5 text-brand-gold fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-700 italic mb-4 font-sans">
+                "Best authentic Mexican food in Southern Utah! The fajitas are incredible and the staff treats you like family."
+              </p>
+              <p className="text-gray-900 font-sans font-semibold">— Sarah M.</p>
+              <p className="text-gray-600 text-sm font-sans">St. George</p>
+            </div>
+
+            {/* Review 2 */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="flex gap-1 mb-3">
+                {[1,2,3,4,5].map((i) => (
+                  <svg key={i} className="w-5 h-5 text-brand-gold fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-700 italic mb-4 font-sans">
+                "Hands down the best margaritas I've ever had! Great atmosphere and the service is always top-notch."
+              </p>
+              <p className="text-gray-900 font-sans font-semibold">— Mike T.</p>
+              <p className="text-gray-600 text-sm font-sans">Kanab</p>
+            </div>
+
+            {/* Review 3 */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="flex gap-1 mb-3">
+                {[1,2,3,4,5].map((i) => (
+                  <svg key={i} className="w-5 h-5 text-brand-gold fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-700 italic mb-4 font-sans">
+                "The molcajete is a must-try! Fresh ingredients, huge portions, and amazing flavors. We come here every week!"
+              </p>
+              <p className="text-gray-900 font-sans font-semibold">— Jennifer R.</p>
+              <p className="text-gray-600 text-sm font-sans">Flagstaff</p>
+            </div>
+
+            {/* Review 4 */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="flex gap-1 mb-3">
+                {[1,2,3,4,5].map((i) => (
+                  <svg key={i} className="w-5 h-5 text-brand-gold fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-700 italic mb-4 font-sans">
+                "Authentic Mexican recipes that remind me of my grandmother's cooking. The carne asada tacos are perfection!"
+              </p>
+              <p className="text-gray-900 font-sans font-semibold">— Carlos D.</p>
+              <p className="text-gray-600 text-sm font-sans">St. George</p>
+            </div>
+
+            {/* Review 5 */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="flex gap-1 mb-3">
+                {[1,2,3,4,5].map((i) => (
+                  <svg key={i} className="w-5 h-5 text-brand-gold fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-700 italic mb-4 font-sans">
+                "Family-friendly atmosphere with incredible food. The kids love it and so do we. Our go-to spot for Mexican!"
+              </p>
+              <p className="text-gray-900 font-sans font-semibold">— Amanda L.</p>
+              <p className="text-gray-600 text-sm font-sans">Kanab</p>
+            </div>
           </div>
         </div>
       </section>
