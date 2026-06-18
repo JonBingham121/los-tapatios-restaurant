@@ -1,43 +1,56 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+    <nav className="relative shadow-md sticky top-0 z-50">
+      {/* Wood Background */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-90"
+        style={{backgroundImage: "url('/assets/bg-wood.png')"}} 
+      />
+      <div className="absolute inset-0 bg-black/20" />
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-brand-red">Los Tapatios</span>
+            <Image 
+              src="/assets/logo.jpg" 
+              alt="Los Tapatios Mexican Restaurant" 
+              width={180} 
+              height={80}
+              className="h-16 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-charcoal hover:text-brand-red transition font-medium">
+            <Link href="/" className="text-white hover:text-brand-cream transition font-sans font-semibold text-shadow">
               Home
             </Link>
-            <Link href="/locations" className="text-charcoal hover:text-brand-red transition font-medium">
+            <Link href="/locations" className="text-white hover:text-brand-cream transition font-sans font-semibold text-shadow">
               Locations
             </Link>
-            <Link href="/menu" className="text-charcoal hover:text-brand-red transition font-medium">
+            <Link href="/menu" className="text-white hover:text-brand-cream transition font-sans font-semibold text-shadow">
               Menu
             </Link>
-            <Link href="/catering" className="text-charcoal hover:text-brand-red transition font-medium">
+            <Link href="/catering" className="text-white hover:text-brand-cream transition font-sans font-semibold text-shadow">
               Catering
             </Link>
-            <Link href="/vip-club" className="text-charcoal hover:text-brand-red transition font-medium">
+            <Link href="/vip-club" className="text-white hover:text-brand-cream transition font-sans font-semibold text-shadow">
               VIP Club
             </Link>
-            <Link href="/contact" className="text-charcoal hover:text-brand-red transition font-medium">
+            <Link href="/contact" className="text-white hover:text-brand-cream transition font-sans font-semibold text-shadow">
               Contact
             </Link>
             <Link
               href="/order"
-              className="bg-brand-red text-white px-6 py-2 rounded-full hover:bg-[#8B0000] transition font-bold"
+              className="bg-brand-red text-white px-6 py-2 rounded-full hover:bg-brand-brown transition font-sans font-bold shadow-lg"
             >
               Order Now
             </Link>
@@ -46,7 +59,7 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-charcoal focus:outline-none"
+            className="md:hidden text-white focus:outline-none"
           >
             <svg
               className="h-6 w-6"
@@ -68,28 +81,28 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-4">
-            <Link href="/" className="block py-2 text-charcoal hover:text-brand-red font-medium">
+          <div className="md:hidden pb-4 bg-brand-brown/95 rounded-b-lg">
+            <Link href="/" className="block py-2 text-white hover:text-brand-cream font-sans font-semibold">
               Home
             </Link>
-            <Link href="/locations" className="block py-2 text-charcoal hover:text-brand-red font-medium">
+            <Link href="/locations" className="block py-2 text-white hover:text-brand-cream font-sans font-semibold">
               Locations
             </Link>
-            <Link href="/menu" className="block py-2 text-charcoal hover:text-brand-red font-medium">
+            <Link href="/menu" className="block py-2 text-white hover:text-brand-cream font-sans font-semibold">
               Menu
             </Link>
-            <Link href="/catering" className="block py-2 text-charcoal hover:text-brand-red font-medium">
+            <Link href="/catering" className="block py-2 text-white hover:text-brand-cream font-sans font-semibold">
               Catering
             </Link>
-            <Link href="/vip-club" className="block py-2 text-charcoal hover:text-brand-red font-medium">
+            <Link href="/vip-club" className="block py-2 text-white hover:text-brand-cream font-sans font-semibold">
               VIP Club
             </Link>
-            <Link href="/contact" className="block py-2 text-charcoal hover:text-brand-red font-medium">
+            <Link href="/contact" className="block py-2 text-white hover:text-brand-cream font-sans font-semibold">
               Contact
             </Link>
             <Link
               href="/order"
-              className="block mt-2 bg-brand-red text-white px-6 py-2 rounded-full text-center hover:bg-[#8B0000] font-bold"
+              className="block mt-2 bg-brand-red text-white px-6 py-2 rounded-full text-center hover:bg-brand-brown font-sans font-bold shadow-lg"
             >
               Order Now
             </Link>
