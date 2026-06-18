@@ -1,10 +1,26 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Bebas_Neue, Pacifico, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const bebasNeue = Bebas_Neue({ 
+  weight: '400',
+  subsets: ["latin"],
+  variable: '--font-bebas'
+});
+
+const pacifico = Pacifico({ 
+  weight: '400',
+  subsets: ["latin"],
+  variable: '--font-pacifico'
+});
+
+const poppins = Poppins({ 
+  weight: ['400', '600', '700'],
+  subsets: ["latin"],
+  variable: '--font-poppins'
+});
 
 export const metadata: Metadata = {
   title: "Los Tapatios Mexican Restaurant | Authentic Mexican Food",
@@ -19,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${poppins.variable} ${bebasNeue.variable} ${pacifico.variable} font-sans`}>
         <Navbar />
         {children}
         <Footer />
